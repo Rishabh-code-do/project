@@ -1,76 +1,89 @@
 <template>
-    <!-- <div class="h-[650px] w-[100%] mt-[20px] bg-black text-white">
-        <div class="flex flex-row font-outfit">
-            <div class="ml-[90px] flex flex-row mt-[140px]">
-                <ul>
+    <div class="h-max w-full mt-5 bg-black text-white p-3 sm:p-6">
+        <div class="ml-5 mt-4 lg:hidden">
+        <h1 class="font-bold text-4xl">Dank!</h1>
+        <p class="font-outfit text-xs">Creating A Vibe You Can Tune In</p>
+        </div>
+        <hr class="mt-5 lg:hidden">
+        <div class="flex flex-col lg:flex-row font-outfit p-3">
+            <div class="w-full flex flex-row justify-between mr-auto ml-auto mt-6 lg:mt-24 md:px-16 lg:px-0 xl:px-16 ">
+                <ul class="mr-4">
                     <li class="underline text-xs">OUR WORLD</li>
                     <br>
-                    <li class="text-[18px]">ABOUT US</li>
+                    <li class="text-xs">ABOUT US</li>
                     <br>
-                    <li class="text-[18px]">OUR STORY</li>
+                    <li class="text-xs">OUR STORY</li>
                     <br>
-                    <li class="text-[18px]">OUR STORY</li>
+                    <li class="text-xs">OUR STORY</li>
                 </ul>
-                <ul class="ml-[100px]">
+                <ul class="mr-4">
                     <li class="underline text-xs">SUPPORT</li>
                     <br>
-                    <li class="text-[18px]">CONTACT US</li>
+                    <li class="text-xs">CONTACT US</li>
                     <br>
-                    <li class="text-[18px]">SHIPPING</li>
+                    <li class="text-xs">SHIPPING</li>
                     <br>
-                    <li class="text-[18px]">FAQS</li>
-                    <br>
-                    <li class="text-[18px]">SIZE GUIDE</li>
+                    <li class="text-xs">FAQS</li>
                 </ul>
-                <ul class="ml-[100px]">
+                <ul>
                     <li class="underline text-xs">LEGAL</li>
                     <br>
-                    <li class="text-[14px]">PRIVACY</li>
+                    <li class="text-xs">PRIVACY</li>
                     <br>
-                    <li class="text-[14px]">TERMS & CONDITIONS</li>
+                    <li class="text-xs ">TERMS & CONDITIONS</li>
                 </ul>
-                <ul class="ml-[100px]">
+                <ul class="hidden sm:block">
                     <li class="underline text-xs">FOLLOW US</li>
                     <br>
-                    <li class="text-[14px]">INSTAGRAM</li>
+                    <li class="text-xs">INSTAGRAM</li>
                     <br>
-                    <li class="text-[14px]">FACEBOOK</li>
+                    <li class="text-xs">FACEBOOK</li>
                     <br>
-                    <li class="text-[14px]">TWITTER</li>
+                    <li class="text-xs">TWITTER</li>
                 </ul>
             </div>
-            <div class="border-white ml-[150px] mt-[40px] text-center">
-                <h1>CONTACT US</h1>
-                <h3 class="underline">Let us tackle with your problems.</h3>
-                <div class="w-[400px] h-[350px] mt-[20px] border-[1px] border-white rounded-2xl">
-                <form class="mt-[35px]">
-                    <input type="text" id="first_name" class="bg-black border-b-[1px] border-white text-gray-900 text-sm w-[90%]  p-2.5 dark:placeholder-gray-400 dark:text-white " placeholder="Enter Your Name" required>
-                    <textarea id="message" rows="8" class="block p-2.5 w-[90%] ml-[5%] mt-[20px] text-sm text-gray-900 bg-black rounded-lg border border-white    dark:placeholder-gray-400 dark:text-white" placeholder="Type your message..."></textarea>
-                    <button class="bg-[#c65dfa] p-2 mt-[10px] w-[90%] rounded-lg"><h1>Submit</h1></button>
-                </form>
+            <div class="block sm:hidden mt-8 flex flex-row">
+                <h1 class="text-sm underline font-outfit mr-6 mt-0.5">Follow Us:</h1>
+                <img src="~assets/images/instalogo.png" class="h-4 w-4 mr-6 mt-1"/>
+                <img src="~assets/images/facebooklogo.png" class="h-6 w-6 mr-6"/>
+                <img src="~assets/images/twitterlogo.png" class="h-6 w-6"/>
+            </div>
+            <hr class="mt-8">
+
+            <div class="border-white mt-10 lg:mt-2 text-center lg:ml-16">
+                <h1 class="text-xl">CONTACT US</h1>
+                <h3 class="underline text-sm">Let us tackle with your problems.</h3>
+                    <div class="w-auto lg:w-96 h-max mt-4 border border-white rounded-2xl mr-auto ml-auto px-4 pb-4">
+                    <form class="">
+                        <input type="text" id="first_name" class="bg-black mt-3 border-b border-white text-gray-900 text-sm w-full  p-2.5  dark:placeholder-gray-400 dark:text-white " placeholder="Enter Your Name" required>
+                        <textarea id="message" rows="3" class="block p-2.5 w-full  mt-4 text-sm text-gray-900 bg-black rounded-lg border border-white dark:placeholder-gray-400 dark:text-white block lg:hidden" placeholder="Type your message..."></textarea>
+                        <textarea id="message" rows="8" class="block p-2.5 w-full  mt-4 text-sm text-gray-900 bg-black rounded-lg border border-white dark:placeholder-gray-400 dark:text-white hidden lg:block" placeholder="Type your message..."></textarea>
+                        <button class="bg-[#684EBE] p-2 mt-4 w-full rounded-lg"><h1>Submit</h1></button>
+                    </form>
+                    </div>
+            </div>
+        </div>
+        <div class="font-poppins ml-4 xl:ml-20 hidden lg:block mt-3">
+            <h1 class="font-bold text-4xl">Dank!</h1>
+            <p class="font-outfit text-xs">Creating A Vibe You Can Tune In</p>
+        </div>
+        <br><br>
+        <hr>
+        <div class="mt-3 font-outfit text-sm flex flex-row justify-between " >
+            <div class="ml-auto mr-auto lg:ml-3 xl:ml-8">
+            <h2>©Dankstore 2023.<br class="hidden lg:block">All rights reserved.</h2>
+            </div>
+            <div class="hidden lg:block">
+                <h1 class="text-sm ml-16">Secure Payments</h1>
+                <div class="flex flex-row mt-2">
+                    <div class="h-10 w-10 rounded-full border border-white mr-2 p-1"><img src="~assets/images/paylogo.png" class="rounded-xl h-8 w-8"/></div>
+                    <div class="h-10 w-10 rounded-full border border-white mr-2 p-2"><img src="~assets/images/paypalLogo.png" class="rounded-xl h-6 w-6"/></div>
+                    <div class="h-10 w-10 rounded-full border border-white mr-2 p-1"><img src="~assets/images/paylogo.png" class="rounded-xl h-8 w-8"/></div>
+                    <div class="h-10 w-10 rounded-full border border-white p-2"><img src="~assets/images/visalogo.png" class=" h-5 w-5"/></div>
                 </div>
             </div>
         </div>
-        <div class="font-poppins ml-[90px]">
-            <h1 class="text-2xl font-bold">LOGO</h1>
-            <h3 class="text-sm">Tagline will be here</h3>
-        </div>
-        <br><br>
-        <hr class="w-[94%] ml-[3%]">
-        <div class="ml-[46px] mt-[20px] font-outfit text-sm">
-            <h2>©Madkavy 2022.</h2>
-            <h2>All rights reserved.</h2>
-        </div>
-    </div> -->
-    <footer class="w-full bottom-0 bg-black p-6 mt-8">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap items-center md:justify-between justify-center text-white">
-            <div class="w-full md:w-8/12 px-4 flex flex-row ">
-                <h1 class="ml-auto mr-auto">Footer</h1>
-            </div>
-          </div>
-        </div>
-      </footer>
+    </div>
     
 </template>
 
